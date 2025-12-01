@@ -17,9 +17,6 @@ class AdventOfCodeClient:
 
     def get_input(self, year: int, day: int) -> str:
         url = f"{self.base_url}/{year}/day/{day}/input"
-        print(f"Fetching input data from: {url}")
-        print(f"Using session cookie: {self.session_cookie[:8]}...")
-        print(f"Using headers: {self._headers}")
 
         response = httpx.get(
             url,

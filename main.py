@@ -39,8 +39,8 @@ def main():
 
     solver = load_solver(args.day)
     print(f"Day {args.day}")
-    print(f"Part 1: {solver.solve_part_one(None)}")
-    print(f"Part 2: {solver.solve_part_two(None)}")
+    print(f"Part 1: {solver.solve_part_one()}")
+    print(f"Part 2: {solver.solve_part_two()}")
 
 
 if __name__ == "__main__":

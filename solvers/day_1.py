@@ -6,13 +6,13 @@ class Solver(BaseSolver):
         super().__init__()
         self.data = self.client.get_input(year=2025, day=1)
 
-    def solve_part_one(self, data):
+    def solve_part_one(self):
         # Implement the logic for part one here
         numbers = list(map(str, self.data.splitlines()))
         # implement your logic
         return numbers
 
-    def solve_part_two(self, data):
+    def solve_part_two(self):
         numbers = list(map(str, self.data.splitlines()))
         # implement your logic
         return numbers
