@@ -20,6 +20,28 @@ Get your session cookie from the Advent of Code website (browser dev tools, Appl
 
 ## Usage
 
+Run a specific day:
+
 ```bash
-uv run python main.py
+uv run python main.py --day 1
+```
+
+## Adding Solutions
+
+Create a new file in `solvers/` named `day_N.py`:
+
+```python
+from solvers.base import BaseSolver
+
+
+class Solver(BaseSolver):
+    def solve_part_one(self):
+        input_data = self.client.get_input(2025, 1)
+        # your solution here
+        return result
+
+    def solve_part_two(self):
+        input_data = self.client.get_input(2025, 1)
+        # your solution here
+        return result
 ```
